@@ -1,3 +1,9 @@
 venv
 .idea
 geckodriver.log
+env
+lib
+include
+bin
+.pytest_cache
+__pycache__

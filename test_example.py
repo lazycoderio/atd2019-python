@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common import keys
 
-def example_test():
+def test_example():
     d = webdriver.Chrome()
     cookie={
         "name":"welcome",
