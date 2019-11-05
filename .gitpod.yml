@@ -8,7 +8,8 @@ tasks:
       echo 'export PIP_USER=no' >>~/.bash_profile &&
       source ~/.bash_profile &&
       pip install pipenv &&
-      pipenv install --dev
+      pipenv install --dev &&
+      pipenv shell
 
 ports:
   - port: 6080
