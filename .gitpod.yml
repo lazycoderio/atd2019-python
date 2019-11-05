@@ -1,2 +1,5 @@
 image:
   file: Dockerfile
+
+tasks:
+  - pip install -r requirements.pip
