@@ -3,20 +3,19 @@ image:
 
 tasks:
   - init: >
-    pip3 install virtualenv &&
-    python3 -m virtualenv . &&
-    source ./bin/activate &&
-    echo 'export PIP_USER=no' >>~/.bash_profile &&
-    source ~/.bash_profile &&
-    source ./bin/activate &&
-    pip3 install nodeenv &&
-    nodeenv env &&
-    source ./env/bin/activate &&
-    pip install pipenv &&
-    pipenv install &&
-    pipenv graph
+      pip3 install virtualenv &&
+      python3 -m virtualenv . &&
+      source ./bin/activate &&
+      echo 'export PIP_USER=no' >>~/.bash_profile &&
+      source ~/.bash_profile &&
+      source ./bin/activate &&
+      pip3 install nodeenv &&
+      nodeenv env &&
+      source ./env/bin/activate &&
+      pip install pipenv &&
+      pipenv install &&
+      pipenv graph
   - command: pip install -r requirements.pip
-
 
 ports:
   - port: 6080
