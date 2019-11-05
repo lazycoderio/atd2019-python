@@ -21,4 +21,4 @@ d.find_element_by_css_selector("#closeModal").click()
 d.find_element_by_css_selector("#username").send_keys("admin")
 d.find_element_by_css_selector("#password").send_keys("password" + keys.Keys.ENTER)
 
-d.quit()
+# d.quit()

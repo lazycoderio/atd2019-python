@@ -3,3 +3,7 @@ image:
 
 tasks:
   - command: pip install -r requirements.pip
+
+ports:
+  - port: 6080
+    onOpen: open-browser
