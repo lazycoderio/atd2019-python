@@ -24,5 +24,5 @@ RUN dpkg-divert --add --rename --divert /opt/google/chrome/google-chrome.real /o
 
 # Chrome Driver
 RUN mkdir -p /opt/selenium \
-    && curl http://chromedriver.storage.googleapis.com/79.0.3945.16/chromedriver_linux64.zip -o /opt/selenium/chromedriver_linux64.zip \
+    && curl http://chromedriver.storage.googleapis.com/78.0.3904.70/chromedriver_linux64.zip -o /opt/selenium/chromedriver_linux64.zip \
     && cd /opt/selenium; unzip /opt/selenium/chromedriver_linux64.zip; rm -rf chromedriver_linux64.zip; ln -fs /opt/selenium/chromedriver /usr/local/bin/chromedriver;
