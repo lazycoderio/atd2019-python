@@ -1,7 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common import keys
 
-@test
 def example_test():
     d = webdriver.Chrome()
     cookie={
