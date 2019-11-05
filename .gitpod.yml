@@ -2,6 +2,7 @@ image:
   file: Dockerfile
 
 tasks:
+  - init: pyenv local 3.7.2 && pip install -e ".[dev]"
   - command: pip install -r requirements.pip
 
 ports:

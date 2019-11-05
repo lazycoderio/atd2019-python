@@ -1,16 +1,6 @@
-FROM gitpod/workspace-firefox
+FROM gitpod/workspace-full-vnc
 
 USER root
-
-ENV GECKODRIVER_VERSION 0.23.0
-RUN wget --no-verbose -O /tmp/geckodriver.tar.gz https://github.com/mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-linux64.tar.gz \
-  && rm -rf /opt/geckodriver \
-  && tar -C /opt -zxf /tmp/geckodriver.tar.gz \
-  && rm /tmp/geckodriver.tar.gz \
-  && mv /opt/geckodriver /opt/geckodriver-0.23.0 \
-  && chmod 755 /opt/geckodriver-0.23.0 \
-  && ln -fs /opt/geckodriver-0.23.0 /usr/bin/geckodriver \
-  && ln -fs /opt/geckodriver-0.23.0 /usr/bin/wires
 
 RUN curl https://dl-ssl.google.com/linux/linux_signing_key.pub -o /tmp/google.pub \
     && cat /tmp/google.pub | apt-key add -; rm /tmp/google.pub \
